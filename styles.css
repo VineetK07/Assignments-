@@ -1,0 +1,45 @@
+body{
+    background-color: bisque;
+}
+
+img{
+    margin-bottom: auto;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: auto;
+
+}
+fieldset {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+label{
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+legend{
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+}
+
+input{
+    display: block;
+    font-display: oblique;
+    padding: auto;
+}
+
+button {
+    display: flex;
+    font-style: italic;
+    font-weight: 500px;
+    font-size: large;
+}
+
+

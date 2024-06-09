@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pizza order</title>
+</head>
+<body>
+    <!-- Number of pizzas
+Size (number of slices)
+Shape (square or round)
+Toppings
+Deep dish, thin crust or some other crust types
+Take out, delivery, or eat-in g. And so on…
+labels
+fieldsets/legends
+text boxes
+select menus
+radio buttons
+checkboxes
+text areas
+submit/reset buttons-->
+
+<header> 
+    <h1>Order your Pizza</h1>
+</header>
+<main>  
+    <form>
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> <br>
+
+            <label for="phone">Phone</label> 
+            <input type="tel" id="phone" name="phone" required> <br>
+
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required>            
+        </fieldset>
+        
+            
+       
+         <fieldset>
+
+            <!--Number of Pizzas-->
+            <legend>Pizza form</legend>
+            <label for="pizza">Number of Pizzas</label>
+            <input type="text" placeholder="Enter number of Pizzas">
+        <br>     
+            <!--Size of Pizza-->
+            <label for="Size">Size</label>
+            <select id="Size" name="size" required>
+                <option  value="small">Small 6 slices</option>
+                <option value="medium">Medium 8 slices</option>
+                <option value="large">large 10 slices</option>
+            </select>
+        <br>   
+            <!-- Shape of Pizza-->
+            <label for="Shape">Shape</label>
+            <input type="radio" id="round" name="shape" value="round" required>
+            <label for="round">Round</label> 
+            <input type="radio" id="square" name="shape" value="square" required> 
+            <label for="square">Square</label>
+        <br>
+            <!--Crust types-->
+            <label for="crust">Crust</label>
+             <select id="Crust">Crust
+             <option value="Thin">Thin Crust</option>
+             <option value="thick">Thick Crust</option>
+             <option value="Deep">Deep Crust</option>
+             <option value="Stuffed">stuffed Crust</option>       
+            </select>
+        <br><br>
+    
+            <!--Toppings-->
+            <label for="Toppings">Toppings</label>
+            <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+            <label for="mushrooms">mushrooms</label>
+            <input type="checkbox" id="onions" name="toppings" value="onions">
+            <label for="onions">onions</label>
+            <input type="checkbox" id="Sausage and kale" name="toppings" value="Sausage and kale">
+            <label for="Sausage and kale">Sausage and kale</label>
+
+        </fieldset>
+
+        <fieldset>
+            <!--Delivery method-->
+            <legend>Delivery method</legend>
+            <label for="Delivery method">Delivery Method</label>
+            <select id="Delivery method">Crust
+                <option value="Takeout">Takeout</option>
+                <option value="Dine in">Dine in</option>
+            </select>
+        <br> <br>
+            <!--Address-->
+            <label for="Address">Address</label>
+            <input type="text" id="address" name="address" required>
+        <br>
+            <!--Submit and reset buttons-->
+            <input type="submit" value="Place order"><br>
+            <input type="reset" value="Reset order">
+
+        </fieldset>
+
+        <img src="pizza.jpg" alt="Pizza Image">
+
+    </form>
+</main>
+</body>
+</html>
